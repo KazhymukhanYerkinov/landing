@@ -1,0 +1,134 @@
+@import '../../scss/variables';
+
+.how-work {
+  padding: 40px 0;
+  background-color: $hazelnut;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @media (max-width: $tablet) {
+      padding-left: 15px;
+      
+    }
+  }
+
+  &__title {
+    margin: 15px 0;
+
+    font-size: 24px;
+    line-height: 27px;
+    font-weight: 700;
+    color: $primary;
+    @media (max-width: $phone_plus) {
+      font-size: 18px;
+      margin: 10px 0;
+    }
+    
+    
+  }
+  &__subtitle {
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 400;
+    color: $indigo;
+    @media (max-width: $tablet) {
+      display: none;
+    }
+  }
+
+  &__button {
+    @media (max-width: $tablet) {
+      display: none !important;
+    }
+  }
+
+  &__step {
+    margin-bottom: 10px;
+
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 600;
+    color: $secondary;
+    @media (max-width: $tablet) {
+      display: none;
+    }
+  }
+  &__image {
+    @media (max-width: $tablet) {
+      display: none;
+    }
+  }
+  &__desc {
+    font-size: 15px;
+    line-height: 19px;
+    font-weight: 400;
+    color: $secondary;
+    @media (max-width: $tablet) {
+      font-size: 16px;
+    }
+    @media (max-width: $phone_plus) {
+      font-size: 14px;
+    }
+
+  }
+  &__info {
+    width: 25%;
+    @media (max-width: $tablet) {
+      width: 100%;
+    }
+  }
+
+  &__items {
+    width: 68%;
+
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    @media (max-width: $tablet) {
+      width: 100%;
+    }
+  }
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    width: 33%;
+    @media (max-width: $tablet) {
+
+      width: 100%;
+      display: block;
+      margin-top: 20px;
+    }
+  }
+
+  &__content {
+    padding-top: 20px;
+    @media (max-width: $tablet) {
+      padding-top: 0;
+    }
+  }
+
+  &__mobile-head {
+    display: none;
+    align-items: center;
+    margin-bottom: 8px;
+    @media (max-width: $tablet) {
+      display: flex;
+    }
+
+  }
+  &__mobile-step {
+    margin-left: 10px;
+
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 700;
+    color: $secondary;
+    @media (max-width: $phone_plus) {
+      font-size: 14px;
+    }
+  }
+  
+}

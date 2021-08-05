@@ -1,0 +1,62 @@
+@import '../../../scss/variables';
+
+.search-drawer {
+    padding: 20px 20px;
+    &__header {
+        margin-bottom: 20px;
+
+        display: inline-flex;
+        align-items: flex-start;
+    }
+    &__back-text {
+        font-size: 14px;
+        line-height: 19px;
+        font-weight: 600;
+        color: $secondary;
+    }
+    &__items {
+        border-top: 1px solid $cloud;
+    }
+    &__item {
+        padding: 14px 0;
+        border-bottom: 1px solid $cloud;
+    }
+    &__collapse {
+        height: 0;
+        overflow: hidden;
+        transition: height 0.3s ease-out;
+        &.open {
+            height: auto;
+        }
+
+    }
+    &__collapse-title {
+        margin-bottom: 10px;
+
+        font-size: 14px;
+        line-height: 19px;
+        font-weight: 400;
+        color: $secondary;
+    }
+    &__collapse-desc {
+        font-size: 12px;
+        line-height: 15px;
+        font-weight: 400;
+        color: $cloud;
+    }
+    &__slider {
+        margin: 20px 0;
+    }
+    &__price {
+        display: flex;
+        align-items: center;
+    }
+    &__divider {
+        margin: 0 8px;
+        color: $cloud;
+    }
+    &__button {
+        margin-top: 20px;
+        width: 100%;
+    }
+}

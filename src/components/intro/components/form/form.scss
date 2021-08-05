@@ -1,0 +1,112 @@
+@import '../../../../scss/variables';
+
+.form {
+    padding: 20px 25px;
+    background-color: $snow;
+    border-radius: $block_radius;
+    box-shadow: $dusk-shadow;
+
+    &__title {
+        font-size: 24px;
+        line-height: 27px;
+        font-weight: 700;
+        color: $secondary;
+    }
+    &__desc {
+        margin: 15px 0;
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 400;
+        color: $secondary;
+    }
+
+    &__group {
+        margin-bottom: 15px;
+    }
+    &__errors {
+        margin-top: 5px;
+        font-size: 12px;
+        color: $error;
+    }
+
+    &__input {
+        padding: 0 8px;
+
+        width: 100%;
+        height: 45px;
+        font-size: 14px;
+        color: $primary;
+
+        border: 2px solid $ash;
+        border-radius: $block_radius;
+        
+        background-color: $morado;
+        
+        &::placeholder {
+            color: $place;
+            font-size: 14px;
+        }
+        &:focus {
+            border-color: $writer;
+        }
+
+        &--error {
+            border: 2px solid $error;
+        }
+    }
+    &__select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+
+        padding: 0 8px;
+        width: 100%;
+        height: 45px;
+        font-size: 14px;
+        color: $secondary;
+
+        border: 2px solid $ash;
+        border-radius: $block_radius;
+        cursor: pointer;
+        background: url('../../../../assets/logos/down-circle.svg');
+        background-position-x: 98%;
+        background-position-y: 12px;
+        background-repeat: no-repeat;
+        background-color: $morado;
+
+        &:focus {
+            border-color: $writer;
+        }
+        
+        &--error {
+            border: 2px solid $error;
+        }
+        &--place {
+            color: $place;
+        }
+    }
+    &__check {
+        &:hover {
+            background-color: transparent !important;
+        }
+    }
+    &__label {
+        margin-left: 10px;
+        
+        font-size: 14px;
+        line-height: 19px;
+        color: $secondary;
+        cursor: pointer;
+        &--indigo {
+            color: $indigo;
+        }
+    }
+    &__button {
+        width: 100%;
+    }
+    &__option {
+        color: $secondary;
+    }
+    
+}
+
+

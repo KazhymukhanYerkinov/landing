@@ -1,0 +1,28 @@
+@import '../../../../scss/variables';
+
+.header {
+    padding: 15px 0 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width: $tablet) {
+        padding: 10px 0 5px;
+        justify-content: center;
+    }
+
+    &__outline {
+        margin-left: 20px;
+    }
+    &__logo {
+        @media (max-width: $phone_plus) {
+            width: 30px;
+            height: 30px;
+        }
+    }
+    &__content {
+        @media (max-width: $tablet) {
+            display: none;
+        } 
+    }
+}

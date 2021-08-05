@@ -1,0 +1,100 @@
+@import '../../scss/variables';
+
+.why-onay {
+    padding: 70px 0;
+    
+
+    &__title {
+        font-size: 30px;
+        line-height: 41px;
+        font-weight: 700;
+        color: $primary;
+        text-align: center;
+        @media (max-width: $tablet) {
+            text-align: left; 
+            padding-left: 12px;
+        } 
+        @media (max-width: $phone_plus) {
+            font-size: 18px;
+            line-height: 25px;
+        }
+
+    }
+    &__header {
+        margin: 0 auto;
+    }
+
+    &__items {
+        margin-top: 35px;
+        display: flex; 
+        @media (max-width: $tablet) {
+            padding: 12px;
+
+            width: 100%;
+            max-width: 950px;
+            overflow-x: scroll;
+        } 
+        @media (max-width: $phone_plus) {
+            margin-top: 20px;
+        }  
+
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+
+        width: 30%;
+        box-shadow: $dusk-shadow;
+        border-radius: $block_radius; 
+
+        &:nth-child(2) {
+            margin: 0 5%;
+        }
+        @media (max-width: $tablet) {
+            width: 300px  
+        } 
+        @media (max-width: $phone_plus) {
+            width: 250px;
+        }
+        
+
+
+    }
+    &__image {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        @media (max-width: $tablet) {
+            width: 300px  
+        } 
+        @media (max-width: $phone_plus) {
+            width: 250px;
+        }
+    }
+    &__content {
+        padding: 35px;
+        @media (max-width: $phone_plus) {
+            padding: 15px
+        }
+    }
+    &__sub {
+        margin: 15px 0;
+        font-size: 18px;
+        line-height: 21px;
+        font-weight: 700;
+        color: $secondary;
+        @media (max-width: $phone_plus) {
+            font-size: 16px;
+        } 
+    }
+    &__desc {
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 400;
+        color: $secondary;
+        @media (max-width: $phone_plus) {
+            font-size: 14px;
+        } 
+    }
+}

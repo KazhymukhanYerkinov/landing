@@ -1,0 +1,18 @@
+@import 'fonts';
+@import 'variables';
+@import 'normalize';
+@import 'components/all';
+
+.container__medium {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1120px;
+}
+.container__large {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1350px;
+}
+

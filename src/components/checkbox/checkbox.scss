@@ -1,0 +1,20 @@
+@import '../../scss/variables';
+
+.checkbox {
+    margin: 20px 0;
+
+    display: flex;
+    align-items: center;
+
+    &__item {
+        padding: 0 !important;
+    }
+    &__label {
+        margin-left: 10px;
+        
+        font-size: 14px;
+        line-height: 19px;
+        font-weight: 400;
+        color: $secondary;
+    }
+}

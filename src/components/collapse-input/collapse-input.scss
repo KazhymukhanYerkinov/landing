@@ -1,0 +1,32 @@
+@import '../../scss/variables';
+
+.collapse-input {
+    padding: 10px 0;
+    border-bottom: 1px solid $place;
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__place {
+        font-size: 16px;
+        line-height: 19px;
+        color: $place;
+        font-weight: 400;
+    }
+    &__image {
+        transition: transform 0.3s linear;
+        &.active {
+            transform: rotate(-180deg);
+        }
+    }
+
+    &__items {
+        height: 0;
+        overflow: hidden;
+        transition: height 0.3s ease-out;
+        &.open {
+            height: auto;
+        }
+    }
+}

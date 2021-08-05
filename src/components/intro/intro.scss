@@ -1,0 +1,120 @@
+@import '../../scss/variables';
+
+.intro {
+    padding-bottom: 40px;
+    background-color: $hazelnut;
+
+    &__content {
+        margin-top: 20px;
+        @media (max-width: $tablet) {
+            margin: 5px;
+        }
+        @media (max-width: $phone_plus) {
+            margin: 0;
+        }
+    }
+
+    &__subtitle {
+        margin-bottom: 15px;
+        font-size: 18px;
+        line-height: 21px;
+        font-weight: 700;
+        color: $indigo;
+        @media (max-width: $tablet) {
+            text-align: center;
+        }
+        @media (max-width: $phone_plus) {
+            font-size: 14px;
+        }
+    }
+
+    &__block {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    &__info {
+        width: 57%;
+        @media (max-width: $tablet) {
+            width: 70%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        @media (max-width: $phone_plus) {
+            width: 90%;
+        }
+       
+    }
+    &__find-title {
+        font-size: 42px;
+        line-height: 45px;
+        font-weight: 700;
+        color: $primary;
+    }
+    &__find-desc {
+        margin-top: 20px;
+
+        font-size: 22px;
+        line-height: 27px;
+        font-weight: 500;
+        color: $secondary;
+    }
+    &__form {
+        width: 40%;
+        @media (max-width: $tablet) {
+            display: none;
+        }
+    }
+    &__title {
+        margin-bottom: 40px;
+        font-size: 32px;
+        line-height: 37px;
+        font-weight: 700;
+        color: $primary;
+
+        &--indigo {
+            color: $indigo
+        }
+        @media (max-width: $tablet) {
+            margin-bottom: 20px;
+        }
+        @media (max-width: $phone_plus) {
+            font-size: 28px;
+            line-height: 34px;
+        }
+    }
+    &__title-br {
+        display: none; 
+        @media (max-width: $phone_plus) {
+            display: block;
+        }
+    }
+    &__image {
+        display: block;
+        width: 65%;
+        height: auto;
+        @media (max-width: $tablet) {
+            margin-top: 20px;
+            width: 100%;
+        }
+    }
+    &__mobile {
+        display: none;
+        @media (max-width: $tablet) {
+            display: block;
+        }
+    }
+    &__button {
+        margin-bottom: 15px;
+        max-width: 250px;
+        width: 100%;
+    }
+    &__desc {
+        margin-bottom: 20px;
+
+        font-size: 14px;
+        line-height: 21px;
+        font-weight: 400;
+        color: $secondary;
+    }
+}

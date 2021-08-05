@@ -1,0 +1,37 @@
+@import '../../../scss/variables';
+
+.success-drawer {
+    display: flex;
+    height: 100%;
+    min-height: 100vh;
+    align-items: center;
+
+    &__inner {
+        padding: 0 20px;
+    }
+    &__title {
+        font-size: 30px;
+        line-height: 37px;
+        font-weight: 700;
+        color: $primary;
+        text-align: center;
+    }
+    &__desc {
+        margin: 20px 0;
+        font-size: 14px;
+        line-height: 19px;
+        font-weight: 400;
+        color: $secondary;
+        text-align: center;
+    }
+    &__button {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    &__image {
+        display: block;
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+    }
+}

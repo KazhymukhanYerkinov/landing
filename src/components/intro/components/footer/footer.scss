@@ -1,0 +1,119 @@
+@import '../../../../scss/variables';
+
+.footer {
+    margin-top: 40px;
+
+    &__subtitle {
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 400;
+        color: $secondary
+    }
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__desc {
+        width: 24%;
+
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 700;
+        color: $primary;
+        @media (max-width: $tablet) {
+            margin-bottom: 20px;
+            
+            width: 100%;
+        }
+    }
+    &__items {
+        padding: 0 8px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        width: 62%;
+        height: 60px;
+        background-color: $snow;
+        box-shadow: $dusk-shadow;
+        border-radius: 35px;
+        @media (max-width: $tablet) {
+            display: none;
+        }
+    }
+    &__items-mobile {
+        padding: 0 15px;
+        display: none;
+        align-items: center;
+        justify-content: space-between;
+
+        width: 62%;
+        height: 60px;
+        background-color: $snow;
+        box-shadow: $dusk-shadow;
+        border-radius: $btn_radius;
+        @media (max-width: $tablet) {
+            display: flex;
+            width: 100%;
+        }
+    }
+    &__toggle {
+        position: relative;
+        width: 100%;
+    }
+    &__toggle-content {
+        position: absolute;
+        top: 120%;
+
+        width: 100%;
+        height: 50px;
+        border-radius: $block_radius;
+        background-color: $snow;
+        box-shadow: $dusk-shadow;
+    }
+    &__item {
+        height: 50px;
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        cursor: pointer;
+        border-radius: 35px;
+        transition: background-color 0.2s linear;
+
+        &:hover {
+            background-color: $ground;
+        }
+    }
+    &__mobile-item {
+        height: 50px;
+        width: 100%;
+        
+        display: flex;
+        align-items: center;
+    }
+    
+    &__text {
+        margin-left: 5px;
+
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: 500;
+        color: $secondary;
+
+        @media (max-width: $phone_mini) {
+            font-size: 12px;
+        }
+    }
+    &__button {
+        border: none;
+        padding: 12px;
+        border-radius: 50px;
+
+        background-color: $indigo;
+    }
+}

@@ -1,0 +1,63 @@
+@import '../../../scss/variables';
+
+.submit-request {
+    padding: 20px 20px;
+
+    &__header {
+        display: inline-flex;
+        align-items: flex-start;
+    }
+    &__back-text {
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 600;
+        color: $secondary;
+        @media (max-width: $phone_plus) {
+            font-size: 14px;
+            line-height: 19px;
+        }
+
+    }
+    &__content {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    &__desc {
+        text-align: center;
+
+        font-size: 16px;
+        line-height: 21px;
+        font-weight: 400;
+        color: $secondary;
+
+        @media (max-width: $phone_plus) {
+            font-size: 14px;
+            line-height: 19px;
+            text-align: left;
+        }
+    }
+    &__form {
+        width: 100%;
+        max-width: 500px;
+    }
+    &__form-group {
+        margin: 30px 0;
+    }
+    &__input {
+        width: 100%;
+    }
+    &__button {
+        width: 100%;
+        
+    }
+
+    &__collapse {
+        height: 0;
+        overflow: hidden;
+        transition: height 0.3s ease-out;
+        &.open {
+            height: auto;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+@import '../variables';
+
+.price {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 31px;
+
+    color: $secondary;
+    @media (max-width: $phone_plus) {
+        font-size: 20px;
+    }
+    @media (max-width: $phone_mini) {
+        font-size: 18px;
+    }
+
+    &__month {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21px;
+        color: $cloud;
+        @media (max-width: $phone_plus) {
+            font-size: 14px;
+        }
+    }
+}

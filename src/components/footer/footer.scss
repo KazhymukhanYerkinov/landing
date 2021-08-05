@@ -1,0 +1,88 @@
+@import '../../scss/variables';
+
+.foo {
+    padding: 40px 0;
+    background-color: $hazelnut;
+    
+
+    &__inner {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__title {
+        font-size: 18px;
+        line-height: 21px;
+        font-weight: 700;
+
+        color: $secondary;
+    }
+    &__subtitle {
+        font-size: 16px;
+        line-height: 21px;
+        font-weight: 500;
+
+        color: $secondary;
+    }
+    &__link {
+        margin: 10px 0;
+
+        font-size: 16px;
+        line-height: 21px;
+        font-weight: 400;
+
+        color: $secondary;
+        @media (max-width: $phone_plus) {
+            font-size: 14px;
+        }
+    }
+    &__footer {
+        margin-top: 30px;
+        
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        img {
+            margin-left: 10px;
+        }
+        @media (max-width: $tablet) {
+            img {
+                margin-left: 0;
+                margin-right: 10px;
+                margin-bottom: 15px;
+            }
+        }
+
+    }
+    &__copy {
+        width: 50%;
+
+        font-size: 16px;
+        line-height: 21px;
+        font-weight: 600;
+        color: $secondary;
+
+        
+        @media (max-width: $tablet) {
+            width: 100%;
+            order: 2;
+        }
+    }
+    &__logos {
+        @media (max-width: $tablet) {
+            order: 1;
+        }
+    }
+    &__items {
+        @media (max-width: $tablet) {
+            width: 50%;
+            margin-bottom: 25px;
+        }
+        @media (max-width: $mini_tablet) {
+            width: 100%;
+            border-bottom: 1px solid $hr;
+        }
+    }
+}

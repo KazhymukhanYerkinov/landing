@@ -1,0 +1,127 @@
+@import '../../scss/variables';
+
+.find-work {
+    padding: 40px 0 80px;
+    
+    @media (max-width: $phone_plus) {
+        padding: 0px 0 80px;
+    }
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        background-color: $snow;
+        border-radius: $block-radius;
+        box-shadow: $dusk-shadow;
+    }
+    &__content {
+        padding: 0 60px;
+        width: 48%;
+        @media (max-width: $tablet) {
+            width: 100%;
+            padding: 35px 0;
+        }
+    }
+    &__block {
+        width: 45%;
+        @media (max-width: $tablet) {
+            display: none;
+        }
+    }
+    &__title {
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 700;
+        color: $primary;
+
+        &--indigo {
+            color: $indigo;
+        }
+        @media (max-width: $tablet) {
+            padding-left: 25px;
+        }
+        @media (max-width: $phone_plus) {
+            font-size: 18px;
+            line-height: 24px;
+        }
+
+    }
+    &__items {
+        margin: 30px 0;
+        @media (max-width: $tablet) {
+            display: none;
+        }
+        
+    }
+    &__item {
+        margin-bottom: 20px;
+
+        list-style:disc;
+        font-size: 16px;
+        line-height: 25px;
+        font-weight: 400;
+        color: $secondary;
+    }
+    &__arrow {
+        margin-left: 8px;
+    }
+    &__image {
+        display: block;
+        width: 100%;
+        height: auto;
+        @media (max-width: $tablet) {
+            display: none;
+        } 
+    }
+    &__mobile {
+        display: none;
+        @media (max-width: $tablet) {
+            display: block;
+        } 
+    }
+    &__mobile-image {
+        margin: 25px 0;
+
+        display: block;
+        width: 100%;
+        height: auto;
+        
+    }
+    &__mobile-desc {
+        padding-left: 25px;
+        margin-bottom: 20px;
+
+        font-size: 14px;
+        line-height: 21px;
+        font-weight: 400;
+        color: $secondary;
+        text-align: left;
+    }
+    &__desc-br {
+        @media (max-width: $phone_plus) {
+            display: none;
+        }
+    }
+    &__button {
+        width: 100%;
+        max-width: 350px;
+        display: flex !important;
+        justify-content: center;
+        
+        @media (max-width: $tablet) {
+            margin-left: 25px;
+        }
+        @media (max-width: $phone_plus) {
+            margin-left: 0;
+            max-width: 100%;
+        }
+    }
+    &__padding {
+        @media (max-width: $phone_plus) {
+            padding: 0 15px;
+        }
+        
+    }
+}

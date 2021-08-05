@@ -1,0 +1,26 @@
+@import '../../../scss/variables';
+
+.search-city {
+    padding: 20px;
+    &__header {
+        display: inline-flex;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+    &__back-text {
+        font-size: 14px;
+        line-height: 19px;
+        font-weight: 600;
+        color: $secondary;
+    }
+    &__items {
+        border-top: 1px solid $cloud;
+    }
+    &__item {
+        border-bottom: 1px solid $cloud;
+    }
+    &__button {
+        margin-top: 20px;
+        width: 100%;
+    }
+}
